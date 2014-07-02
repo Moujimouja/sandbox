@@ -1,0 +1,7 @@
+parameters:
+#    mouj_blog.example.class: Mouj\BlogBundle\Example
+
+services:
+#    mouj_blog.example:
+#        class: %mouj_blog.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
