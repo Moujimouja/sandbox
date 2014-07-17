@@ -1,4 +1,4 @@
 mouj_blog:
     resource: "@MoujBlogBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /blog
 

@@ -1,3 +1,18 @@
-mouj_blog_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: MoujBlogBundle:Default:index }
+mouj_accueil:
+    path:      /
+    defaults:  { _controller: MoujBlogBundle:Blog:index }
+    
+mouj_voir:
+    path:      /article/{id}
+    defaults:  { _controller: MoujBlogBundle:Blog:voir }
+    
+mouj_ajouter:
+    path:      /ajouter
+    defaults:  { _controller: MoujBlogBundle:Blog:ajouter }
+
+mouj_voir_slug:
+    path:     /{annee}/{slug}.{format}
+    defaults: { _controller: MoujBlogBundle:Blog:voirSlug, format: html }
+    requirements:
+        annee:  \d{4}
+        format: html|xml
